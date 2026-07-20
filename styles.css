@@ -453,7 +453,10 @@ code {
   text-align: center;
   pointer-events: none;
   transform: translateY(10px) scale(0.98);
-  transition: opacity 900ms cubic-bezier(.2,.8,.2,1), transform 900ms cubic-bezier(.2,.8,.2,1), filter 900ms cubic-bezier(.2,.8,.2,1);
+  transition:
+    opacity 0ms linear,
+    transform 200ms cubic-bezier(.2,.8,.2,1),
+    filter 0ms linear;
   filter: blur(8px);
 }
 
