@@ -163,6 +163,7 @@ function scheduleOpenerEntry() {
   openerRevealTimer = window.setTimeout(revealOpenerEntry, OPENER_ENTRY_DELAY_MS);
 }
 
+scheduleOpenerEntry();
 openerVideo?.addEventListener("playing", scheduleOpenerEntry, { once: true });
 openerVideo?.addEventListener("error", revealOpenerEntry, { once: true });
 openerVideo?.addEventListener("canplay", () => {
